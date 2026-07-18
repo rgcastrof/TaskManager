@@ -2,6 +2,6 @@ package models;
 
 public enum TaskStatus {
     PENDING,
-    COMPLETED,
+    FINISHED,
     CANCELED
 }
