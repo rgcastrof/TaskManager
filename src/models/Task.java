@@ -1,14 +1,26 @@
 package models;
 
 public class Task {
+    private int id;
     private String name;
     private String description;
     private TaskStatus status;
 
-    public Task(String name, String description, TaskStatus status) {
+    static int idCounter = 0;
+
+    public Task(String name, String description) {
+        this.id = idCounter++;
         this.name = name;
         this.description = description;
-        this.status = status;
+        this.status = TaskStatus.PENDING;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
     }
 
     public String getName() {
