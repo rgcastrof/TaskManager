@@ -52,7 +52,11 @@ public class Tui {
         System.out.print("Type task description: ");
         String description = scanner.next();
 
-        taskController.addTask(new Task(name, description));
+        try {
+            taskController.addTask(new Task(name, description));
+        } catch (RuntimeException e) {
+            throw new RuntimeException(e);
+        }
     }
 
     private void drawTasks(TaskController taskController) {
