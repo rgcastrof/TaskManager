@@ -1,6 +1,7 @@
 import controllers.TaskController;
 import models.Task;
 import exceptions.TaskException;
+import models.TaskStatus;
 
 import java.util.ArrayList;
 import java.util.Scanner;
@@ -13,36 +14,41 @@ public class Tui {
     }
 
     private void drawMenu() {
-        System.out.println(
+        System.out.print(
                 """
                 === Task Manager ===
                 1. Adicionar tarefa.
                 2. Listar tarefas.
-                3. Remover tarefas.
-                4. Sair.
-                """
+                3. Atualizar tarefa.
+                4. Remover tarefa.
+                5. Sair.
+               \s
+                >\s"""
         );
     }
 
     public void handleKeyPress(TaskController taskController) {
         drawMenu();
-        String arg = scanner.next();
+        String option = scanner.next();
 
-        switch (arg) {
+        switch (option) {
             case "1":
                 addTaskMenu(taskController);
                 break;
             case "2":
-                drawTasks(taskController);
+                listTasks(taskController);
                 break;
             case "3":
-                removeTask(taskController);
+                updateTasks(taskController);
                 break;
             case "4":
+                removeTask(taskController);
+                break;
+            case "5":
                 System.exit(0);
                 break;
             default:
-                System.err.println("Error: Invalid key\n");
+                System.err.println("Erro: Opcao invalida.");
                 break;
         }
     }
@@ -55,25 +61,68 @@ public class Tui {
 
         try {
             taskController.addTask(new Task(name, description));
+            System.out.println("Tarefa adicionada com sucesso.\n");
         } catch (TaskException e) {
             System.out.println("Erro: " + e.getMessage());
         }
     }
 
-    private void drawTasks(TaskController taskController) {
+    private void listTasks(TaskController taskController) {
         ArrayList<Task> tasks = taskController.getTasks();
         if (tasks.isEmpty()) {
-            System.out.println("There are no tasks yet.\n");
+            System.out.println("Nao ha nenhuma tarefa adicionada.");
         } else {
             System.out.println("=== Task List ===");
             for (Task t : tasks) {
-                System.out.printf("%d: %s ", t.getId(), t.getDescription());
+                System.out.printf("%d: %s ", t.getId(), t.getName());
                 String status = switch (t.getStatus()) {
-                    case PENDING -> "[]";
+                    case PENDING -> "[ ]";
                     case FINISHED -> "[x]";
-                    case CANCELED -> "C";
+                    case CANCELED -> "[C]";
                 };
                 System.out.println(status);
+                System.out.println("Descricao: " + t.getDescription() + "\n");
+            }
+        }
+
+        System.out.println("Pressione Enter para voltar...");
+        new Scanner(System.in).nextLine();
+    }
+
+    private void updateTasks(TaskController taskController) {
+        boolean running = true;
+        TaskStatus taskStatus = TaskStatus.PENDING;
+        int taskId, option;
+
+        while (running) {
+            System.out.print("Digite o id da tarefa que deseja atualizar: ");
+            taskId = scanner.nextInt();
+
+            System.out.print(
+                    """
+                    O que deseja fazer?
+                    1. Finalizar tarefa.
+                    2. Cancelar tarefa.
+                    \s
+                    >\s"""
+            );
+            option = scanner.nextInt();
+            switch (option) {
+                case 1:
+                    taskStatus = TaskStatus.FINISHED;
+                    running = false;
+                    break;
+                case 2:
+                    taskStatus = TaskStatus.CANCELED;
+                    running = false;
+                    break;
+                default:
+                    System.out.println("Opcao invalida, tente novamente.");
+            }
+            try {
+                taskController.updateTask(taskId, taskStatus);
+            } catch (TaskException e) {
+                System.out.println("Erro" + e.getMessage());
             }
         }
     }

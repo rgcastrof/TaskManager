@@ -2,6 +2,7 @@ package controllers;
 
 import models.Task;
 import exceptions.TaskException;
+import models.TaskStatus;
 
 import java.util.ArrayList;
 
@@ -25,15 +26,20 @@ public class TaskController {
         return tasks;
     }
 
+    public void updateTask(int taskId, TaskStatus status) throws TaskException {
+        if (validateTask(taskId)) tasks.get(taskId).setStatus(status); else throw new TaskException("Task not found.");
+    }
+
     public void deleteTask(int taskId) throws TaskException {
-        boolean taskExist = false;
+        if (validateTask(taskId)) tasks.remove(taskId); else throw new TaskException("Task not found.");
+    }
+
+    private boolean validateTask(int taskId) {
         for (Task t : tasks) {
             if (t.getId() == taskId) {
-                taskExist = true;
-                break;
+                return true;
             }
         }
-
-        if (taskExist) tasks.remove(taskId); else throw new TaskException("Task not found.");
+        return false;
     }
 }
