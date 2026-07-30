@@ -16,7 +16,7 @@ public class TaskController {
     public void addTask(Task task) throws TaskException {
         for (Task t : tasks) {
             if (t.getId() == task.getId())
-                throw new TaskException("There already a task with this id.");
+                throw new TaskException("ID de tarefa repetido.");
         }
 
         tasks.add(task);
@@ -27,11 +27,11 @@ public class TaskController {
     }
 
     public void updateTask(int taskId, TaskStatus status) throws TaskException {
-        if (validateTask(taskId)) tasks.get(taskId).setStatus(status); else throw new TaskException("Task not found.");
+        if (validateTask(taskId)) tasks.get(taskId).setStatus(status); else throw new TaskException("Tarefa nao existe.");
     }
 
     public void deleteTask(int taskId) throws TaskException {
-        if (validateTask(taskId)) tasks.remove(taskId); else throw new TaskException("Task not found.");
+        if (validateTask(taskId)) tasks.remove(taskId); else throw new TaskException("Tarefa nao existe.");
     }
 
     private boolean validateTask(int taskId) {

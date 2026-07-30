@@ -54,9 +54,9 @@ public class Tui {
     }
 
     private void addTaskMenu(TaskController taskController) {
-        System.out.print("Type task name: ");
+        System.out.print("Digite o nome da tarefa: ");
         String name = scanner.next();
-        System.out.print("Type task description: ");
+        System.out.print("Digite a descricao da tarefa: ");
         String description = scanner.next();
 
         try {
@@ -70,9 +70,9 @@ public class Tui {
     private void listTasks(TaskController taskController) {
         ArrayList<Task> tasks = taskController.getTasks();
         if (tasks.isEmpty()) {
-            System.out.println("Nao ha nenhuma tarefa adicionada.");
+            System.out.println("Nenhuma tarefa adicionada.");
         } else {
-            System.out.println("=== Task List ===");
+            System.out.println("=== Tarefas ===");
             for (Task t : tasks) {
                 System.out.printf("%d: %s ", t.getId(), t.getName());
                 String status = switch (t.getStatus()) {
@@ -128,7 +128,7 @@ public class Tui {
     }
 
     private void removeTask(TaskController taskController) {
-        System.out.print("Type id of the task which will be removed: ");
+        System.out.print("Digite o ID da tarefa que deseja remover: ");
         try {
             int taskId = scanner.nextInt();
             taskController.deleteTask(taskId);
