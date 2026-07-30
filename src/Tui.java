@@ -1,5 +1,6 @@
 import controllers.TaskController;
 import models.Task;
+import exceptions.TaskException;
 
 import java.util.ArrayList;
 import java.util.Scanner;
@@ -54,8 +55,8 @@ public class Tui {
 
         try {
             taskController.addTask(new Task(name, description));
-        } catch (RuntimeException e) {
-            throw new RuntimeException(e);
+        } catch (TaskException e) {
+            System.out.println("Erro: " + e.getMessage());
         }
     }
 
@@ -82,8 +83,8 @@ public class Tui {
         try {
             int taskId = scanner.nextInt();
             taskController.deleteTask(taskId);
-        } catch (Exception e) {
-            throw new RuntimeException(e);
+        } catch (TaskException e) {
+            System.out.println("Erro: " + e.getMessage());
         }
     }
 }
