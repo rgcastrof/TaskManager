@@ -5,8 +5,8 @@ module com.rgcastrof.taskmanager.taskmanager {
     requires org.controlsfx.controls;
     requires java.sql;
 
-    opens com.rgcastrof.taskmanager.taskmanager to javafx.fxml;
-    exports com.rgcastrof.taskmanager.taskmanager;
-    exports com.rgcastrof.taskmanager.taskmanager.controller;
-    opens com.rgcastrof.taskmanager.taskmanager.controller to javafx.fxml;
+    opens com.rgcastrof.taskmanager to javafx.fxml;
+    exports com.rgcastrof.taskmanager;
+    exports com.rgcastrof.taskmanager.controller;
+    opens com.rgcastrof.taskmanager.controller to javafx.fxml;
 }

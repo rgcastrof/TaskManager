@@ -7,14 +7,33 @@
     <list default="true" id="ac78cf81-d64d-4956-a629-c925b9a43ee8" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/external/configuration/database.properties" beforeDir="false" afterPath="$PROJECT_DIR$/external/configuration/database.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/rgcastrof/taskmanager/taskmanager/Launcher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/rgcastrof/taskmanager/taskmanager/Launcher.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/rgcastrof/taskmanager/taskmanager/controller/TaskController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/rgcastrof/taskmanager/taskmanager/controller/TaskController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/rgcastrof/taskmanager/taskmanager/domain/models/Task.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/rgcastrof/taskmanager/taskmanager/domain/models/Task.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/rgcastrof/taskmanager/taskmanager/hello-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/rgcastrof/taskmanager/taskmanager/hello-view.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/rgcastrof/taskmanager/taskmanager/Launcher.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/rgcastrof/taskmanager/taskmanager/Launcher.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/rgcastrof/taskmanager/taskmanager/controller/TaskController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/rgcastrof/taskmanager/taskmanager/controller/TaskController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/rgcastrof/taskmanager/taskmanager/domain/models/Task.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/rgcastrof/taskmanager/taskmanager/domain/models/Task.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/rgcastrof/taskmanager/taskmanager/hello-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/rgcastrof/taskmanager/taskmanager/hello-view.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/rgcastrof/taskmanager/taskmanager/Launcher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/rgcastrof/taskmanager/Launcher.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/rgcastrof/taskmanager/taskmanager/MainApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/rgcastrof/taskmanager/MainApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/rgcastrof/taskmanager/taskmanager/controller/TaskController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/rgcastrof/taskmanager/controller/TaskController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/rgcastrof/taskmanager/taskmanager/data/local/dao/TaskDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/rgcastrof/taskmanager/data/local/dao/TaskDaoImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/rgcastrof/taskmanager/taskmanager/data/local/database/TaskDatabase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/rgcastrof/taskmanager/data/local/database/TaskDatabase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/rgcastrof/taskmanager/taskmanager/data/repository/TaskRepositoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/rgcastrof/taskmanager/data/repository/TaskRepositoryImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/rgcastrof/taskmanager/taskmanager/domain/dao/TaskDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/rgcastrof/taskmanager/domain/dao/TaskDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/rgcastrof/taskmanager/taskmanager/domain/models/Task.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/rgcastrof/taskmanager/domain/models/Task.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/rgcastrof/taskmanager/taskmanager/domain/repository/TaskRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/rgcastrof/taskmanager/domain/repository/TaskRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/rgcastrof/taskmanager/taskmanager/exceptions/TaskException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/rgcastrof/taskmanager/exceptions/TaskException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/rgcastrof/taskmanager/taskmanager/utils/TaskDatabaseUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/rgcastrof/taskmanager/utils/TaskDatabaseUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/rgcastrof/taskmanager/taskmanager/MainView.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/rgcastrof/taskmanager/MainView.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/rgcastrof/taskmanager/taskmanager/Launcher.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/rgcastrof/taskmanager/taskmanager/MainApplication.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/rgcastrof/taskmanager/taskmanager/MainView.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/rgcastrof/taskmanager/taskmanager/controller/TaskController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/rgcastrof/taskmanager/taskmanager/data/local/dao/TaskDaoImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/rgcastrof/taskmanager/taskmanager/data/local/database/TaskDatabase.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/rgcastrof/taskmanager/taskmanager/data/repository/TaskRepositoryImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/rgcastrof/taskmanager/taskmanager/domain/dao/TaskDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/rgcastrof/taskmanager/taskmanager/domain/models/Task.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/rgcastrof/taskmanager/taskmanager/domain/repository/TaskRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/rgcastrof/taskmanager/taskmanager/exceptions/TaskException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/rgcastrof/taskmanager/taskmanager/utils/TaskDatabaseUtil.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/module-info.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,35 +64,36 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.App.executor&quot;: &quot;Run&quot;,
-    &quot;Application.Launcher.executor&quot;: &quot;Run&quot;,
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
-    &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.jshint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.jshint&quot;: &quot;&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.App.executor": "Run",
+    "Application.Launcher.executor": "Run",
+    "Maven.TaskManager [clean].executor": "Run",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "codeWithMe.voiceChat.enabledByDefault": "false",
+    "git-widget-placeholder": "master",
+    "kotlin-language-version-configured": "true",
+    "node.js.detected.package.jshint": "true",
+    "node.js.selected.package.jshint": "",
+    "nodejs_package_manager_path": "npm"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;DatabaseDriversLRU&quot;: [
-      &quot;postgresql&quot;
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "postgresql"
     ]
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/main/resources/com/rgcastrof/taskmanager/taskmanager" />
     </key>
   </component>
   <component name="RunManager" selected="Application.Launcher">
-    <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.rgcastrof.taskmanager.taskmanager.Launcher.App" />
+    <configuration name="App" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="com.rgcastrof.taskmanager.Launcher.App" />
       <module name="TaskManager" />
       <extension name="coverage">
         <pattern>
@@ -85,8 +105,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Launcher" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.rgcastrof.taskmanager.taskmanager.Launcher" />
+    <configuration name="Launcher" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="com.rgcastrof.taskmanager.Launcher" />
       <module name="TaskManager" />
       <extension name="coverage">
         <pattern>
@@ -98,6 +118,10 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <list>
+      <item itemvalue="Application.App" />
+      <item itemvalue="Application.Launcher" />
+    </list>
     <recent_temporary>
       <list>
         <item itemvalue="Application.Launcher" />

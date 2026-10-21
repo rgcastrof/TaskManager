@@ -4,7 +4,7 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.rgcastrof.taskmanager</groupId>
+    <groupId>com.rgcastrof</groupId>
     <artifactId>TaskManager</artifactId>
     <version>1.0-SNAPSHOT</version>
     <name>TaskManager</name>
@@ -72,7 +72,7 @@
                         <id>default-cli</id>
                         <configuration>
                             <mainClass>
-                                com.rgcastrof.taskmanager.taskmanager/com.rgcastrof.taskmanager.taskmanager.MainApplication
+                                com.rgcastrof.taskmanager.taskmanager/com.rgcastrof.taskmanager.MainApplication
                             </mainClass>
                             <launcher>app</launcher>
                             <jlinkZipName>app</jlinkZipName>
