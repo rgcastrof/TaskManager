@@ -17,11 +17,10 @@ public class TaskDaoImpl implements TaskDao<Task> {
         try {
             Connection connection = TaskDatabase.getInstance().getConnection();
             PreparedStatement preparedStatement = connection.prepareStatement(
-                    "INSERT INTO task (name, description, is_completed) VALUES (?, ?, ?)"
+                    "INSERT INTO task (name, description, is_completed) VALUES (?, ?, FALSE)"
             );
             preparedStatement.setString(1, task.getName());
             preparedStatement.setString(2, task.getDescription());
-            preparedStatement.setBoolean(3, task.getCompleted());
             preparedStatement.executeUpdate();
             preparedStatement.close();
         } catch (SQLException e) {
@@ -40,7 +39,6 @@ public class TaskDaoImpl implements TaskDao<Task> {
             ResultSet rs = preparedStatement.executeQuery();
             while (rs.next()) {
                 tasks.add(new Task(
-                        rs.getInt("id"),
                         rs.getString("name"),
                         rs.getString("description"),
                         rs.getBoolean("is_completed")
@@ -65,7 +63,6 @@ public class TaskDaoImpl implements TaskDao<Task> {
             ResultSet rs = preparedStatement.executeQuery();
             while (rs.next()) {
                 tasks.add(new Task(
-                        rs.getInt("id"),
                         rs.getString("name"),
                         rs.getString("description"),
                         rs.getBoolean("is_completed")

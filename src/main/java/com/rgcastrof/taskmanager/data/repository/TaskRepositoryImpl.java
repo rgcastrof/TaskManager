@@ -4,12 +4,13 @@ import com.rgcastrof.taskmanager.data.local.dao.TaskDaoImpl;
 import com.rgcastrof.taskmanager.domain.models.Task;
 import com.rgcastrof.taskmanager.domain.repository.TaskRepository;
 
+import java.io.IOException;
 import java.util.List;
 
 public class TaskRepositoryImpl implements TaskRepository<Task> {
     private final TaskDaoImpl taskDao = new TaskDaoImpl();
     @Override
-    public void create(Task task) {
+    public void create(Task task) throws IOException {
         taskDao.create(task);
     }
 

@@ -1,11 +1,11 @@
 package com.rgcastrof.taskmanager.domain.models;
 
 public class Task {
-    private final String name;
-    private final String description;
+    private String name;
+    private String description;
     private boolean isCompleted;
 
-    public Task(int id, String name, String description, boolean isCompleted) {
+    public Task(String name, String description, boolean isCompleted) {
         this.name = name;
         this.description = description;
         this.isCompleted = isCompleted;
@@ -21,6 +21,14 @@ public class Task {
 
     public boolean getCompleted() {
         return isCompleted;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setDescription(String description) {
+        this.description = description;
     }
 
     public void setCompleted(boolean completed) {

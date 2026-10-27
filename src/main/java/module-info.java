@@ -8,5 +8,6 @@ module com.rgcastrof.taskmanager.taskmanager {
     opens com.rgcastrof.taskmanager to javafx.fxml;
     exports com.rgcastrof.taskmanager;
     exports com.rgcastrof.taskmanager.controller;
+    exports com.rgcastrof.taskmanager.domain.models;
     opens com.rgcastrof.taskmanager.controller to javafx.fxml;
 }
