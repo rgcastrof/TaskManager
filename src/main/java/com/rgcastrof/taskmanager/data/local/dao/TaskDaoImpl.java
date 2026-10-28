@@ -17,11 +17,19 @@ public class TaskDaoImpl implements TaskDao<Task> {
         try {
             Connection connection = TaskDatabase.getInstance().getConnection();
             PreparedStatement preparedStatement = connection.prepareStatement(
-                    "INSERT INTO task (name, description, is_completed) VALUES (?, ?, FALSE)"
+                    "INSERT INTO task (name, description, is_completed) VALUES (?, ?, FALSE)",
+                    PreparedStatement.RETURN_GENERATED_KEYS
             );
             preparedStatement.setString(1, task.getName());
             preparedStatement.setString(2, task.getDescription());
             preparedStatement.executeUpdate();
+
+            ResultSet generatedKeys = preparedStatement.getGeneratedKeys();
+            if (generatedKeys.next()) {
+                task.setId(generatedKeys.getInt(1));
+            }
+
+            generatedKeys.close();
             preparedStatement.close();
         } catch (SQLException e) {
             throw new RuntimeException(e);

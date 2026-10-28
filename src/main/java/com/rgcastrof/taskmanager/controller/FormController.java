@@ -46,7 +46,7 @@ public class FormController {
                 taskConsumer.accept(this.task);
                 cancelForm();
             } catch (IOException e) {
-                e.printStackTrace();
+                throw new RuntimeException(e.getMessage());
             }
         } else {
             this.task.setName(taskName);
@@ -56,7 +56,7 @@ public class FormController {
                 taskConsumer.accept(this.task);
                 cancelForm();
             } catch (IOException e) {
-                e.printStackTrace();
+                throw new RuntimeException(e.getMessage());
             }
         }
     }
