@@ -7,10 +7,7 @@
     <list default="true" id="ac78cf81-d64d-4956-a629-c925b9a43ee8" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/external/configuration/database.properties" beforeDir="false" afterPath="$PROJECT_DIR$/external/configuration/database.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/rgcastrof/taskmanager/FormView.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/rgcastrof/taskmanager/FormView.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/rgcastrof/taskmanager/MainView.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/rgcastrof/taskmanager/MainView.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/rgcastrof/taskmanager/MainView.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/rgcastrof/taskmanager/MainView.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/rgcastrof/taskmanager/data/local/dao/TaskDaoImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/rgcastrof/taskmanager/data/local/dao/TaskDaoImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,8 +23,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="FxmlFile" />
-        <option value="Class" />
         <option value="CSS File" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -55,6 +52,7 @@
     "Application.App.executor": "Run",
     "Application.Launcher.executor": "Run",
     "Application.com.rgcastrof.taskmanager.Launcher.executor": "Run",
+    "JUnit.RepositoryTest.executor": "Run",
     "Maven.TaskManager [clean].executor": "Run",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
@@ -80,7 +78,7 @@
       <recent name="$PROJECT_DIR$/src/main/resources/com/rgcastrof/taskmanager/taskmanager" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Launcher">
+  <component name="RunManager" selected="JUnit.RepositoryTest">
     <configuration name="App" type="Application" factoryName="Application" temporary="true">
       <option name="MAIN_CLASS_NAME" value="com.rgcastrof.taskmanager.Launcher.App" />
       <module name="TaskManager" />
@@ -107,12 +105,29 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="RepositoryTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="TaskManager" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="repository.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="repository" />
+      <option name="MAIN_CLASS_NAME" value="repository.RepositoryTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
       <item itemvalue="Application.App" />
       <item itemvalue="Application.Launcher" />
+      <item itemvalue="JUnit.RepositoryTest" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.RepositoryTest" />
         <item itemvalue="Application.Launcher" />
         <item itemvalue="Application.App" />
       </list>
