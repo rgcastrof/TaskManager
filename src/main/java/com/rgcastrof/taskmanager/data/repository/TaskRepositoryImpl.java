@@ -25,6 +25,11 @@ public class TaskRepositoryImpl implements TaskRepository<Task> {
     }
 
     @Override
+    public void delete(Task task) throws IOException {
+        taskDao.delete(task);
+    }
+
+    @Override
     public List<Task> getAll() { return taskDao.getAll(); }
 
     @Override

@@ -93,6 +93,22 @@ public class TaskController {
     }
 
     @FXML
+    private void deleteTask() {
+        Task selected = taskTableView.getSelectionModel().getSelectedItem();
+        if (selected != null) {
+            try {
+                taskRepository.delete(selected);
+                tasks.remove(selected);
+            } catch (IOException e) {
+                throw new RuntimeException(e);
+            }
+        }
+        else
+            showAlert("Por favor selecione uma tarefa", AlertType.WARNING);
+
+    }
+
+    @FXML
     private void searchTask() {
         String pattern = searchBar.getText().trim();
         if (!pattern.isEmpty()) {

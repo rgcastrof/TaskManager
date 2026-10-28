@@ -38,7 +38,7 @@
                 <Button onAction="#newTask" text="Nova tarefa" />
                 <Button onAction="#editTask" text="Editar" />
                 <Button onAction="#completeTask" text="Concluir" />
-                <Button styleClass="botao-remover" text="Remover" />
+                <Button styleClass="botao-remover" text="Remover" onAction="#deleteTask"/>
             </HBox>
         </VBox>
     </center>
