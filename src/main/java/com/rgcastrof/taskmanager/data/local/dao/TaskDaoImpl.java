@@ -29,6 +29,24 @@ public class TaskDaoImpl implements TaskDao<Task> {
     }
 
     @Override
+    public void update(Task task) {
+        try {
+            Connection connection = TaskDatabase.getInstance().getConnection();
+            PreparedStatement preparedStatement = connection.prepareStatement(
+                    "UPDATE task SET name = ?, description = ? WHERE id = ?"
+            );
+            preparedStatement.setString(1, task.getName());
+            preparedStatement.setString(2, task.getDescription());
+            preparedStatement.setInt(3, task.getId());
+            preparedStatement.executeUpdate();
+            preparedStatement.close();
+
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+        }
+    }
+
+    @Override
     public List<Task> getAll() {
         List<Task> tasks = new ArrayList<>();
         try {
@@ -39,6 +57,7 @@ public class TaskDaoImpl implements TaskDao<Task> {
             ResultSet rs = preparedStatement.executeQuery();
             while (rs.next()) {
                 tasks.add(new Task(
+                        rs.getInt("id"),
                         rs.getString("name"),
                         rs.getString("description"),
                         rs.getBoolean("is_completed")
@@ -63,6 +82,7 @@ public class TaskDaoImpl implements TaskDao<Task> {
             ResultSet rs = preparedStatement.executeQuery();
             while (rs.next()) {
                 tasks.add(new Task(
+                        rs.getInt("id"),
                         rs.getString("name"),
                         rs.getString("description"),
                         rs.getBoolean("is_completed")

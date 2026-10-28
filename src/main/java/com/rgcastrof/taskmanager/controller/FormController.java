@@ -40,17 +40,24 @@ public class FormController {
         String taskDescription = descriptionField.getText().trim();
 
         if (this.task == null) {
-            this.task = new Task(taskName, taskDescription, false);
+            this.task = new Task(0, taskName, taskDescription, false);
+            try {
+                taskRepository.create(this.task);
+                taskConsumer.accept(this.task);
+                cancelForm();
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
         } else {
             this.task.setName(taskName);
             this.task.setDescription(taskDescription);
-        }
-        try {
-            taskRepository.create(this.task);
-            taskConsumer.accept(this.task);
-            cancelForm();
-        } catch (IOException e) {
-            e.printStackTrace();
+            try {
+                taskRepository.update(this.task);
+                taskConsumer.accept(this.task);
+                cancelForm();
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
         }
     }
 

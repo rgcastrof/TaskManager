@@ -10,6 +10,8 @@ import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.control.Alert;
+import javafx.scene.control.Alert.AlertType;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.stage.Modality;
@@ -53,8 +55,15 @@ public class TaskController {
     }
 
     @FXML
-    public void newTask() {
-        openForm(null);
+    private void newTask() { openForm(null); }
+
+    @FXML
+    private void editTask() {
+        Task selected = taskTableView.getSelectionModel().getSelectedItem();
+        if (selected != null)
+            openForm(selected);
+        else
+            showAlert("Por favor selecione uma tarefa para editar.", AlertType.WARNING);
     }
 
     private void openForm(Task task) {
@@ -64,7 +73,16 @@ public class TaskController {
             FormController formController = loader.getController();
             formController.setTask(task);
             /* Atualiza tabela ao inserir nova tarefa na janela de formulário */
-            formController.setTaskConsumer(tasks::add);
+            if (task == null)
+                formController.setTaskConsumer(tasks::add);
+            else
+                formController.setTaskConsumer(t -> {
+                    int index = tasks.indexOf(t);
+                    if (index >= 0)
+                        tasks.set(index, t);
+                    else
+                        System.out.println("foo");
+                });
 
             Stage stage = new Stage();
 
@@ -75,5 +93,17 @@ public class TaskController {
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
+    }
+    private void showAlert(String message, AlertType alertType) {
+        Alert alert = new Alert(alertType);
+        if (alertType == AlertType.WARNING) {
+            alert.setTitle("Aviso");
+            alert.setHeaderText(message);
+        }
+        else if (alertType == AlertType.ERROR) {
+            alert.setTitle("Erro");
+            alert.setHeaderText(message);
+        }
+        alert.showAndWait();
     }
 }

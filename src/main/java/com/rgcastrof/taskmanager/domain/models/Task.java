@@ -1,15 +1,19 @@
 package com.rgcastrof.taskmanager.domain.models;
 
 public class Task {
+    private final int id;
     private String name;
     private String description;
     private boolean isCompleted;
 
-    public Task(String name, String description, boolean isCompleted) {
+    public Task(int id, String name, String description, boolean isCompleted) {
+        this.id = id;
         this.name = name;
         this.description = description;
         this.isCompleted = isCompleted;
     }
+
+    public int getId() { return id; }
 
     public String getName() {
         return name;

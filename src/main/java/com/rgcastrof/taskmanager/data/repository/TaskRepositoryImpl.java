@@ -15,6 +15,11 @@ public class TaskRepositoryImpl implements TaskRepository<Task> {
     }
 
     @Override
+    public void update(Task task) throws IOException {
+        taskDao.update(task);
+    }
+
+    @Override
     public List<Task> getAll() { return taskDao.getAll(); }
 
     @Override

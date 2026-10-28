@@ -45,7 +45,7 @@
             </TableView>
             <HBox spacing="10">
                 <Button text="Nova tarefa" onAction="#newTask"/>
-                <Button text="Editar"/>
+                <Button text="Editar" onAction="#editTask"/>
                 <Button text="Concluir"/>
                 <Button text="Remover" styleClass="botao-remover"/>
                 <Button text="Atualizar"/>
