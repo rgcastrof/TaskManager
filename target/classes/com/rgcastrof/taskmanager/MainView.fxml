@@ -4,7 +4,7 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<BorderPane xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.rgcastrof.taskmanager.controller.TaskController">
+<BorderPane xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.rgcastrof.taskmanager.controller.TaskController" stylesheets="@style.css">
 
     <top>
         <VBox spacing="5" styleClass="header">
@@ -12,8 +12,8 @@
                 <Insets bottom="20" left="20" right="20" top="20" />
             </padding>
 
-            <Label styleClass="titulo" text="TaskManager" />
-            <Label styleClass="subtitulo" text="Gerenciador de Tarefas" />
+            <Label styleClass="title" text="TaskManager" />
+            <Label styleClass="subtitle" text="Gerenciador de Tarefas" />
         </VBox>
     </top>
 
@@ -23,7 +23,7 @@
                 <Insets bottom="20" left="20" right="20" top="20" />
             </padding>
             <HBox spacing="10">
-                <TextField fx:id="searchBar" prefHeight="23.0" prefWidth="550.0" />
+                <TextField fx:id="searchBar" prefHeight="23.0" prefWidth="550.0" styleClass="search-bar"/>
                 <Button mnemonicParsing="false" text="Buscar" onAction="#searchTask"/>
             </HBox>
 
@@ -35,10 +35,10 @@
                 </columns>
             </TableView>
             <HBox spacing="10">
-                <Button onAction="#newTask" text="Nova tarefa" />
+                <Button onAction="#newTask" text="Nova tarefa" styleClass="new-task-button"/>
                 <Button onAction="#editTask" text="Editar" />
                 <Button onAction="#completeTask" text="Concluir" />
-                <Button styleClass="botao-remover" text="Remover" onAction="#deleteTask"/>
+                <Button onAction="#deleteTask" text="Remover" styleClass="remove-task-button"/>
             </HBox>
         </VBox>
     </center>

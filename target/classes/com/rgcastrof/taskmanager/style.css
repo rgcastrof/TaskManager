@@ -1,0 +1,56 @@
+.root {
+    -fx-font-family: "Segoe UI";
+    -fx-background-color: #f5f6fa;
+}
+
+.header {
+    -fx-background-color: #273469;
+}
+
+.title {
+    -fx-font-size: 24px;
+    -fx-font-weight: bold;
+}
+
+.header .title {
+    -fx-text-fill: white;
+}
+
+.subtitle {
+    -fx-font-size: 14px;
+}
+
+.header .subtitle {
+    -fx-text-fill: #d9def5;
+}
+
+.table-view {
+    -fx-background-color: #273469;
+}
+
+.table-view .column-header {
+    -fx-font-weight: bold;
+}
+
+.button {
+    -fx-padding: 8px 15px;
+    -fx-cursor: hand;
+}
+
+.new-task-button {
+    -fx-font-weight: bold;
+}
+
+.remove-task-button {
+    -fx-text-fill: #b00020;
+    -fx-font-weight: bold;
+}
+
+.text-field,
+.text-area {
+    -fx-pref-width: 350px;
+}
+
+.search-bar {
+    -fx-padding: 8px;
+}

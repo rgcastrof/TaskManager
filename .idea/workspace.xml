@@ -7,24 +7,10 @@
     <list default="true" id="ac78cf81-d64d-4956-a629-c925b9a43ee8" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/external/configuration/database.properties" beforeDir="false" afterPath="$PROJECT_DIR$/external/configuration/database.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/rgcastrof/taskmanager/Launcher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/rgcastrof/taskmanager/Launcher.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/rgcastrof/taskmanager/controller/FormController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/rgcastrof/taskmanager/controller/FormController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/rgcastrof/taskmanager/controller/TaskController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/rgcastrof/taskmanager/controller/TaskController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/rgcastrof/taskmanager/data/local/dao/TaskDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/rgcastrof/taskmanager/data/local/dao/TaskDaoImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/rgcastrof/taskmanager/data/repository/TaskRepositoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/rgcastrof/taskmanager/data/repository/TaskRepositoryImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/rgcastrof/taskmanager/domain/dao/TaskDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/rgcastrof/taskmanager/domain/dao/TaskDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/rgcastrof/taskmanager/domain/repository/TaskRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/rgcastrof/taskmanager/domain/repository/TaskRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/rgcastrof/taskmanager/utils/TaskDatabaseUtil.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/rgcastrof/taskmanager/FormView.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/rgcastrof/taskmanager/FormView.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/com/rgcastrof/taskmanager/MainView.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/rgcastrof/taskmanager/MainView.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/rgcastrof/taskmanager/Launcher.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/rgcastrof/taskmanager/Launcher.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/rgcastrof/taskmanager/MainView.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/rgcastrof/taskmanager/MainView.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/rgcastrof/taskmanager/controller/FormController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/rgcastrof/taskmanager/controller/FormController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/rgcastrof/taskmanager/controller/TaskController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/rgcastrof/taskmanager/controller/TaskController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/rgcastrof/taskmanager/data/local/dao/TaskDaoImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/rgcastrof/taskmanager/data/local/dao/TaskDaoImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/rgcastrof/taskmanager/data/repository/TaskRepositoryImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/rgcastrof/taskmanager/data/repository/TaskRepositoryImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/rgcastrof/taskmanager/domain/dao/TaskDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/rgcastrof/taskmanager/domain/dao/TaskDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/rgcastrof/taskmanager/domain/repository/TaskRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/rgcastrof/taskmanager/domain/repository/TaskRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/rgcastrof/taskmanager/utils/TaskDatabaseUtil.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,6 +27,7 @@
       <list>
         <option value="FxmlFile" />
         <option value="Class" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -63,29 +50,30 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.App.executor&quot;: &quot;Run&quot;,
-    &quot;Application.Launcher.executor&quot;: &quot;Run&quot;,
-    &quot;Application.com.rgcastrof.taskmanager.Launcher.executor&quot;: &quot;Run&quot;,
-    &quot;Maven.TaskManager [clean].executor&quot;: &quot;Run&quot;,
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
-    &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.jshint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.jshint&quot;: &quot;&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.App.executor": "Run",
+    "Application.Launcher.executor": "Run",
+    "Application.com.rgcastrof.taskmanager.Launcher.executor": "Run",
+    "Maven.TaskManager [clean].executor": "Run",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "codeWithMe.voiceChat.enabledByDefault": "false",
+    "git-widget-placeholder": "master",
+    "kotlin-language-version-configured": "true",
+    "list.type.of.created.stylesheet": "CSS",
+    "node.js.detected.package.jshint": "true",
+    "node.js.selected.package.jshint": "",
+    "nodejs_package_manager_path": "npm"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;DatabaseDriversLRU&quot;: [
-      &quot;postgresql&quot;
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "postgresql"
     ]
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/main/java/com/rgcastrof/taskmanager" />
