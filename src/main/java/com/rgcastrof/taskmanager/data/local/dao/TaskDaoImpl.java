@@ -47,6 +47,22 @@ public class TaskDaoImpl implements TaskDao<Task> {
     }
 
     @Override
+    public void complete(Task task) {
+        try {
+            Connection connection = TaskDatabase.getInstance().getConnection();
+            PreparedStatement preparedStatement = connection.prepareStatement(
+                    "UPDATE task SET is_completed = TRUE WHERE id = ?"
+            );
+            preparedStatement.setInt(1, task.getId());
+            preparedStatement.executeUpdate();
+            preparedStatement.close();
+
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+        }
+    }
+
+    @Override
     public List<Task> getAll() {
         List<Task> tasks = new ArrayList<>();
         try {

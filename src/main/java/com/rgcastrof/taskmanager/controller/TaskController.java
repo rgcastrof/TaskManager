@@ -66,6 +66,26 @@ public class TaskController {
             showAlert("Por favor selecione uma tarefa para editar.", AlertType.WARNING);
     }
 
+    @FXML
+    private void completeTask() {
+        Task selected = taskTableView.getSelectionModel().getSelectedItem();
+        if (selected != null) {
+            try {
+                taskRepository.complete(selected);
+                selected.setCompleted(true);
+                int index = tasks.indexOf(selected);
+                if (index >= 0)
+                    tasks.set(index, selected);
+                else
+                    showAlert("Tarefa não encontrada", AlertType.ERROR);
+            } catch (IOException e) {
+                throw new RuntimeException(e);
+            }
+        }
+        else
+            showAlert("Por favor selecione uma tarefa", AlertType.WARNING);
+    }
+
     private void openForm(Task task) {
         try {
             FXMLLoader loader = new FXMLLoader(getClass().getResource("/com/rgcastrof/taskmanager/FormView.fxml"));
@@ -81,7 +101,7 @@ public class TaskController {
                     if (index >= 0)
                         tasks.set(index, t);
                     else
-                        System.out.println("foo");
+                        showAlert("Tarefa não encontrada", AlertType.ERROR);
                 });
 
             Stage stage = new Stage();
@@ -94,6 +114,7 @@ public class TaskController {
             throw new RuntimeException(e);
         }
     }
+
     private void showAlert(String message, AlertType alertType) {
         Alert alert = new Alert(alertType);
         if (alertType == AlertType.WARNING) {
