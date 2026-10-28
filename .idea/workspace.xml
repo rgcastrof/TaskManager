@@ -6,11 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="ac78cf81-d64d-4956-a629-c925b9a43ee8" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/external/configuration/database.properties" beforeDir="false" afterPath="$PROJECT_DIR$/external/configuration/database.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/rgcastrof/taskmanager/controller/FormController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/rgcastrof/taskmanager/controller/FormController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/rgcastrof/taskmanager/data/local/dao/TaskDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/rgcastrof/taskmanager/data/local/dao/TaskDaoImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/rgcastrof/taskmanager/domain/models/Task.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/rgcastrof/taskmanager/domain/models/Task.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/rgcastrof/taskmanager/controller/FormController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/rgcastrof/taskmanager/controller/FormController.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
