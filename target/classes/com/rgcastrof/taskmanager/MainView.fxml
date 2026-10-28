@@ -1,53 +1,44 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.geometry.Insets?>
-<?import javafx.scene.control.Label?>
-<?import javafx.scene.control.TableColumn?>
-<?import javafx.scene.control.TableView?>
-<?import javafx.scene.layout.BorderPane?>
-<?import javafx.scene.layout.VBox?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
 
-<?import javafx.scene.control.Button?>
-<?import javafx.scene.layout.HBox?>
-<BorderPane xmlns="http://javafx.com/javafx/21"
-            xmlns:fx="http://javafx.com/fxml/1"
-            fx:controller="com.rgcastrof.taskmanager.controller.TaskController">
+<BorderPane xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.rgcastrof.taskmanager.controller.TaskController">
 
     <top>
         <VBox spacing="5" styleClass="header">
             <padding>
-                <Insets top="20" right="20" bottom="20" left="20"/>
+                <Insets bottom="20" left="20" right="20" top="20" />
             </padding>
 
-            <Label text="TaskManager" styleClass="titulo"/>
-            <Label text="Gerenciador de Tarefas" styleClass="subtitulo"/>
+            <Label styleClass="titulo" text="TaskManager" />
+            <Label styleClass="subtitulo" text="Gerenciador de Tarefas" />
         </VBox>
     </top>
 
     <center>
         <VBox spacing="15">
             <padding>
-                <Insets top="20" right="20" bottom="20" left="20"/>
+                <Insets bottom="20" left="20" right="20" top="20" />
             </padding>
+            <HBox spacing="10">
+                <TextField fx:id="searchBar" prefHeight="23.0" prefWidth="550.0" />
+                <Button mnemonicParsing="false" text="Buscar" onAction="#searchTask"/>
+            </HBox>
 
             <TableView fx:id="taskTableView" VBox.vgrow="ALWAYS">
                 <columns>
-                    <TableColumn fx:id="taskName"
-                                 text="Título"
-                                 prefWidth="200"/>
-                    <TableColumn fx:id="taskDescription"
-                                 text="Descrição"
-                                 prefWidth="350"/>
-                    <TableColumn fx:id="taskStatus"
-                                 text="Concluída"
-                                 prefWidth="120"/>
+                    <TableColumn fx:id="taskName" prefWidth="200" text="Título" />
+                    <TableColumn fx:id="taskDescription" prefWidth="350" text="Descrição" />
+                    <TableColumn fx:id="taskStatus" prefWidth="120" text="Concluída" />
                 </columns>
             </TableView>
             <HBox spacing="10">
-                <Button text="Nova tarefa" onAction="#newTask"/>
-                <Button text="Editar" onAction="#editTask"/>
-                <Button text="Concluir" onAction="#completeTask"/>
-                <Button text="Remover" styleClass="botao-remover"/>
+                <Button onAction="#newTask" text="Nova tarefa" />
+                <Button onAction="#editTask" text="Editar" />
+                <Button onAction="#completeTask" text="Concluir" />
+                <Button styleClass="botao-remover" text="Remover" />
             </HBox>
         </VBox>
     </center>

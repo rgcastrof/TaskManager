@@ -14,10 +14,12 @@ import javafx.scene.control.Alert;
 import javafx.scene.control.Alert.AlertType;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
+import javafx.scene.control.TextField;
 import javafx.stage.Modality;
 import javafx.stage.Stage;
 
 import java.io.IOException;
+import java.util.List;
 
 public class TaskController {
     @FXML
@@ -31,6 +33,9 @@ public class TaskController {
 
     @FXML
     private TableColumn<Task, Boolean> taskStatus;
+
+    @FXML
+    private TextField searchBar;
 
     private final TaskRepositoryImpl taskRepository = new TaskRepositoryImpl();
     private final ObservableList<Task> tasks = FXCollections.observableArrayList();
@@ -52,6 +57,7 @@ public class TaskController {
         tasks.addAll(taskRepository.getAll());
 
         taskTableView.setItems(tasks);
+        searchBar.setPromptText("Buscar tarefa...");
     }
 
     @FXML
@@ -84,6 +90,21 @@ public class TaskController {
         }
         else
             showAlert("Por favor selecione uma tarefa", AlertType.WARNING);
+    }
+
+    @FXML
+    private void searchTask() {
+        String pattern = searchBar.getText().trim();
+        if (!pattern.isEmpty()) {
+            try {
+                List<Task> filteredTasks = taskRepository.getByName(pattern);
+                tasks.setAll(filteredTasks);
+            } catch (Exception e) {
+                throw new RuntimeException(e);
+            }
+        } else {
+            tasks.setAll(taskRepository.getAll());
+        }
     }
 
     private void openForm(Task task) {
