@@ -18,7 +18,7 @@ public class FormController {
     private TextArea descriptionField;
 
     private Task task;
-    private TaskRepositoryImpl taskRepository = new TaskRepositoryImpl();
+    private final TaskRepositoryImpl taskRepository = new TaskRepositoryImpl();
 
     private Consumer<Task> taskConsumer;
     public void setTaskConsumer(Consumer<Task> callback) {

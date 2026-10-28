@@ -7,10 +7,24 @@
     <list default="true" id="ac78cf81-d64d-4956-a629-c925b9a43ee8" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/external/configuration/database.properties" beforeDir="false" afterPath="$PROJECT_DIR$/external/configuration/database.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/rgcastrof/taskmanager/Launcher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/rgcastrof/taskmanager/Launcher.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/rgcastrof/taskmanager/controller/FormController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/rgcastrof/taskmanager/controller/FormController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/rgcastrof/taskmanager/controller/TaskController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/rgcastrof/taskmanager/controller/TaskController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/rgcastrof/taskmanager/data/local/dao/TaskDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/rgcastrof/taskmanager/data/local/dao/TaskDaoImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/rgcastrof/taskmanager/data/repository/TaskRepositoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/rgcastrof/taskmanager/data/repository/TaskRepositoryImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/rgcastrof/taskmanager/domain/dao/TaskDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/rgcastrof/taskmanager/domain/dao/TaskDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/rgcastrof/taskmanager/domain/repository/TaskRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/rgcastrof/taskmanager/domain/repository/TaskRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/rgcastrof/taskmanager/utils/TaskDatabaseUtil.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/com/rgcastrof/taskmanager/MainView.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/rgcastrof/taskmanager/MainView.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/rgcastrof/taskmanager/Launcher.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/rgcastrof/taskmanager/Launcher.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/rgcastrof/taskmanager/MainView.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/rgcastrof/taskmanager/MainView.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/rgcastrof/taskmanager/controller/FormController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/rgcastrof/taskmanager/controller/FormController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/rgcastrof/taskmanager/controller/TaskController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/rgcastrof/taskmanager/controller/TaskController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/rgcastrof/taskmanager/data/local/dao/TaskDaoImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/rgcastrof/taskmanager/data/local/dao/TaskDaoImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/rgcastrof/taskmanager/data/repository/TaskRepositoryImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/rgcastrof/taskmanager/data/repository/TaskRepositoryImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/rgcastrof/taskmanager/domain/dao/TaskDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/rgcastrof/taskmanager/domain/dao/TaskDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/rgcastrof/taskmanager/domain/repository/TaskRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/rgcastrof/taskmanager/domain/repository/TaskRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/rgcastrof/taskmanager/utils/TaskDatabaseUtil.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
